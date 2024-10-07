@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources</title>
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #121212; /* Dark background */
+        color: #ffffff; /* White text */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        color: white; /* Heading color */
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .resource-card {
+        background-color: #1c1c1c; /* Darker card background */
+        border: 2px solid #ff8c00; /* Vibrant orange border */
+        border-radius: 15px;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto; /* Center card */
+        box-shadow: 0px 4px 12px rgba(255, 140, 0, 0.5); /* Stronger orange shadow */
+      }
+
+      .resource-card img {
+        max-width: 80%; /* Decrease image size */
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); /* Sharper shadow for image */
+      }
+
+      ul {
+        list-style-type: none; /* Remove default bullet points */
+        padding-left: 0; /* Remove default padding */
+        text-align: left;
+      }
+
+      ul li {
+        margin: 15px 0;
+        font-size: 18px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #ff8c00; /* Bright orange for links */
+        font-weight: bold;
+      }
+
+      ul li a:hover {
+        text-decoration: underline;
+      }
+
+      ul li i {
+        margin-right: 10px; /* Space between icon and text */
+      }
+
+      /* Button styling as label */
+      .button {
+        background-color: #ff8c00; /* Orange button */
+        color: #121212; /* Dark text */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        display: inline-block;
+      }
+
+      .button:hover {
+        background-color: #ffa500; /* Lighter orange on hover */
+        color: white;
+      }
+
+      /* Hide the checkbox (but still clickable via label) */
+      #toggleDetails {
+        display: none;
+      }
+
+      /* Book details section (hidden by default) */
+      .book-details {
+        display: none;
+        background-color: #2a2a2a; /* Darker background for details */
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        color: #ffffff;
+      }
+
+      /* Show book details when checkbox is checked */
+      #toggleDetails:checked ~ .book-details {
+        display: block;
+      }
+
+      /* Internal links in book details */
+      .book-details a {
+        color: #ff8c00;
+        text-decoration: none;
+      }
+
+      .book-details a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WEB DEVELOPMENT Reference Links</h2>
+
+    <!-- Card with orange border and shadow -->
+    <div class="resource-card">
+      <!-- Add image related to HTML -->
+      <img src="./pngwing.com (1).png" alt="HTML logo or related image" />
+
+      <!-- Resource links -->
+      <ul>
+        <li>
+          <a href="https://youtu.be/xQ_LkOHyvPM?si=Iy8URBGjvcmlqZnA" target="_blank">
+            <i class="fab fa-youtube"></i> HTML YouTube Resource
+          </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/html/" target="_blank">
+            <i class="fas fa-sitemap"></i> HTML Site
+          </a>
+        </li>
+        <li>
+          <a href="https://a.co/d/3b2GUR0" target="_blank">
+            <i class="fas fa-book"></i> HTML Book Details
+          </a>
+        </li>
+      </ul>
+
+      <!-- Checkbox to toggle book details -->
+      <input type="checkbox" id="toggleDetails" />
+      <!-- Label as a button -->
+      <label for="toggleDetails" class="button">Show Book Details</label>
+
+      <!-- Book details (hidden by default, shown when clicked) -->
+      <div class="book-details">
+        <h3>HTML & CSS: Design and Build Websites</h3>
+        <p>Author: Jon Duckett</p>
+        <p>
+          Book Details:
+          <br> Title: HTML and CSS: Design and Build Websites
+          <br> Author: Jon Duckett
+          <br> Publisher: Wiley
+          <br> Publication Date: November 2011
+          <br> ISBN: 978-1118008188
+          <br> Pages: 512
+        </p>
+        <p>
+          <strong>Why This Book?</strong>
+          <br> - Beginner-Friendly: Great for beginners with simple explanations.
+          <br> - Design-Oriented: Colorful infographics and diagrams.
+          <br> - Practical Approach: Emphasizes hands-on learning.
+        </p>
+        <p>
+          Available on
+          <a href="https://a.co/d/3b2GUR0" target="_blank">Amazon</a>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
